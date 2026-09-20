@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MachineTimer : MonoBehaviour
 {
@@ -8,31 +9,68 @@ public class MachineTimer : MonoBehaviour
     public float speed = 1f;
 
     public Slider timerSlider;
+    public GameObject gameOverScreen;
 
-    private bool playerInside = false;
+    private int playerCount = 0;
+    private bool gameOver = false;
+
+    void Start()
+    {
+        gameOverScreen.SetActive(false);
+    }
 
     void Update()
     {
-        if (playerInside)
-            currentTimer += speed * Time.deltaTime;
+        if (gameOver)
+            return;
+
+        if (playerCount > 0)
+        {
+            currentTimer += speed * playerCount * Time.deltaTime;
+        }
         else
+        {
             currentTimer -= speed * Time.deltaTime;
+        }
 
         currentTimer = Mathf.Clamp(currentTimer, 0f, maxTimer);
 
         if (timerSlider != null)
             timerSlider.value = currentTimer / maxTimer;
+
+        if (currentTimer <= 0f)
+        {
+            GameOver();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            playerInside = true;
+        {
+            playerCount++;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
-            playerInside = false;
+        {
+            playerCount--;
+            playerCount = Mathf.Max(playerCount, 0);
+        }
+    }
+
+    private void GameOver()
+    {
+        gameOver = true;
+
+        if (gameOverScreen != null)
+            gameOverScreen.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
