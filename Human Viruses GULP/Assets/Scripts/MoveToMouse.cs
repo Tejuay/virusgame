@@ -9,6 +9,8 @@ public class MoveToMouse : MonoBehaviour
     private bool selected;
     private NavMeshAgent agent;
 
+    private Color guyBrown;
+
 
     void Start()
     {
@@ -42,7 +44,7 @@ public class MoveToMouse : MonoBehaviour
                 if (obj != this)
                 {
                     obj.selected = false;
-                    obj.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                    obj.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.4716981f, 0.2589889f, 0.2589889f);
                 }
             }
         }
