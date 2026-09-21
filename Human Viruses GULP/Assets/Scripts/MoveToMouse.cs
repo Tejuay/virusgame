@@ -28,6 +28,8 @@ public class MoveToMouse : MonoBehaviour
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;
             agent.SetDestination(target);
+            selected = false;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(0.4716981f, 0.2589889f, 0.2589889f);
         }
         
     }
