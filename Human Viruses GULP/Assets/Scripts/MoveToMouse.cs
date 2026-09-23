@@ -29,7 +29,7 @@ public class MoveToMouse : MonoBehaviour
             target.z = transform.position.z;
             agent.SetDestination(target);
             selected = false;
-            gameObject.GetComponent<SpriteRenderer>().color = new Color(0.4716981f, 0.2589889f, 0.2589889f);
+            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         }
         
     }
@@ -46,7 +46,7 @@ public class MoveToMouse : MonoBehaviour
                 if (obj != this)
                 {
                     obj.selected = false;
-                    obj.gameObject.GetComponent<SpriteRenderer>().color = new Color(0.4716981f, 0.2589889f, 0.2589889f);
+                    obj.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 }
             }
         }
