@@ -64,6 +64,7 @@ public class MachineTimer : MonoBehaviour
     private void GameOver()
     {
         gameOver = true;
+        Time.timeScale = 0;
 
         if (gameOverScreen != null)
             gameOverScreen.SetActive(true);
