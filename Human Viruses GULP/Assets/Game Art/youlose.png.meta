@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 280fefd5216f1a64aa46cc8314c14b9d
+guid: 86c549319394cc14d9cb04466e9d22e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2901391668391977382
-    second: righthand_0
-  - first:
-      213: -891776193498684549
-    second: righthand_1
-  - first:
-      213: -8147177811013637333
-    second: righthand_2
-  - first:
-      213: 6379150801128552962
-    second: righthand_3
-  - first:
-      213: -7186373866860883055
-    second: righthand_4
+      213: 5213398208827704517
+    second: youlose_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: righthand_0
+      name: youlose_0
       rect:
         serializedVersion: 2
-        x: 4005
-        y: 4624
-        width: 11
-        height: 18
+        x: 0
+        y: 21
+        width: 1020
+        height: 932
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a128c4a950d34820800000000000000
-      internalID: 2901391668391977382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: righthand_1
-      rect:
-        serializedVersion: 2
-        x: 4016
-        y: 4634
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b736c5fd646cf93f0800000000000000
-      internalID: -891776193498684549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: righthand_2
-      rect:
-        serializedVersion: 2
-        x: 3663
-        y: 3953
-        width: 14
-        height: 279
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2b669c42f86fee80800000000000000
-      internalID: -8147177811013637333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: righthand_3
-      rect:
-        serializedVersion: 2
-        x: 3740
-        y: 4119
-        width: 181
-        height: 118
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20a7aedfadb478850800000000000000
-      internalID: 6379150801128552962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: righthand_4
-      rect:
-        serializedVersion: 2
-        x: 3817
-        y: 4230
-        width: 174
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1935b9a0b0fd44c90800000000000000
-      internalID: -7186373866860883055
+      spriteID: 5c445d59c06b95840800000000000000
+      internalID: 5213398208827704517
       vertices: []
       indices: 
       edges: []
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      righthand_0: 2901391668391977382
-      righthand_1: -891776193498684549
-      righthand_2: -8147177811013637333
-      righthand_3: 6379150801128552962
-      righthand_4: -7186373866860883055
+      youlose_0: 5213398208827704517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
